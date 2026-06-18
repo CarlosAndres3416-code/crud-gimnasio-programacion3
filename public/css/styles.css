@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    background-color: #f4f6f9;
+}
+
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+form label, form input, form select, form button, form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+}
+
+form input, form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#contenedor-tarjetas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.tarjeta-atleta {
+    background: white;
+    border-left: 5px solid #ccc;
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* El toque clave de la lógica del gimnasio */
+.badge.estado-activo {
+    background-color: #e6f4ea;
+    color: #137333;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.85em;
+}
+
+.badge.estado-inactive {
+    background-color: #fce8e6;
+    color: #c5221f;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.85em;
+}
